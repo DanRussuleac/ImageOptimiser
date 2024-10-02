@@ -7,6 +7,6 @@ Albert Scaria George - successful push
 
 Plan - 
 
-Dan - 
-Albert - 
-Ledion - 
+Dan - OCR - text enhancing
+Albert - Cropping
+Ledion - shadows - lines
