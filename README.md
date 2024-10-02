@@ -4,3 +4,9 @@
 Dan Russuleac
 Ledion Pashaj - successful push
 Albert Scaria George - successful push
+
+Plan - 
+
+Dan - 
+Albert - 
+Ledion - 
