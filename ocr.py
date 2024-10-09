@@ -74,7 +74,7 @@ def extract_text_from_image(image_path):
     return detected_text
 
 # Path to the original image
-image_path = 'image7.jpg'
+image_path = 'image1.jpg'
 
 # Get bounding boxes from Textract
 bounding_boxes = analyze_document_and_get_bounding_boxes(image_path)
