@@ -64,7 +64,7 @@ def main():
     try:
         src_path = os.path.dirname(os.path.abspath(__file__))
 
-        input_image = "image7.jpg"
+        input_image = "image6.jpg"
         optimized_image = "optimized_image7.png"
 
         img_path = os.path.join(src_path, input_image)
