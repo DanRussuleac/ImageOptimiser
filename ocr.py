@@ -66,15 +66,6 @@ def crop_image_to_text(image_path, bounding_boxes):
     return cropped_image_path
 
 def extract_text_from_image(image_path):
-    """
-    Extracts text from an image using Amazon Textract.
-
-    Parameters:
-    - image_path (str): Path to the image.
-
-    Returns:
-    - detected_text (str): Extracted text content.
-    """
     textract = boto3.client('textract')
 
     with open(image_path, 'rb') as document:
@@ -92,15 +83,11 @@ def extract_text_from_image(image_path):
 if __name__ == '__main__':
     image_path = 'image1.jpg'
 
-    # Obtain bounding boxes from Textract
     bounding_boxes = analyze_document_and_get_bounding_boxes(image_path)
 
-    # Crop the image to the region containing text
     cropped_image_path = crop_image_to_text(image_path, bounding_boxes)
 
-    # Extract text from the cropped image
     extracted_text = extract_text_from_image(cropped_image_path)
 
-    # Output the extracted text
     print("Extracted Text from Cropped Image:")
     print(extracted_text)

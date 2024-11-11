@@ -5,14 +5,6 @@ import os
 import sys
 
 def optimize_image(img_path, output_path):
-    """
-    Enhances an image through resizing, grayscaling, noise reduction,
-    thresholding, filtering, and contrast adjustment.
-
-    Parameters:
-    - img_path: Path to the input image.
-    - output_path: Path to save the optimized image.
-    """
     try:
         print("Loading image...")
         img = cv2.imread(img_path)
@@ -58,9 +50,6 @@ def optimize_image(img_path, output_path):
         print(f"An error occurred during image optimization: {e}")
 
 def main():
-    """
-    Executes the image optimization process.
-    """
     try:
         src_path = os.path.dirname(os.path.abspath(__file__))
 
