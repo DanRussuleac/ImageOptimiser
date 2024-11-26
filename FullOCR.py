@@ -218,7 +218,7 @@ if __name__ == "__main__":
             print("Image optimization failed.")
             sys.exit(1)
 
-        processed_image_path = os.path.join(src_path, 'processed_image.png')
+        processed_image_path = os.path.join(src_path, 'processed_image.jpg')
         optimized_image.save(processed_image_path)
         print(f"Processed image saved as '{processed_image_path}'.")
 
